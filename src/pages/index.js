@@ -15,7 +15,6 @@ export default function Home() {
 					<a href="mailto:bokild@gmail.com">Email Me</a>
 				</div>
 			</div>
-			<div id="container" data-images='["/1.jpg","/2.jpg","/3.jpg"]'></div>
 			<div class="content">
 				<h2 class="content__title"><span>Dave Bokil</span><em>Web Developer</em></h2>
 			</div>
