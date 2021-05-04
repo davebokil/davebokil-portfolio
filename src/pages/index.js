@@ -13,7 +13,7 @@ export default function Home() {
 				<div class="frame__links">
 					<a href="https://www.linkedin.com/in/davebokil/" target="_blank" rel="noreferrer">LinkedIn</a>
 					<a href="https://github.com/davebokil" target="_blank" rel="noreferrer">GitHub</a>
-					<a href="/contact">Contact</a>
+					<a href="mailto:bokild@gmail.com">Contact</a>
 				</div>
 			</div>
 			<div class="content">
