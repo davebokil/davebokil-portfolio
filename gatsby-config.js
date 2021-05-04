@@ -7,6 +7,12 @@
 module.exports = {
   /* Your site config here */
   plugins: [
-  'gatsby-plugin-next-seo'
+  'gatsby-plugin-next-seo',
+  {
+    resolve: `gatsby-source-instagram`,
+    options: {
+      username: `200809158`,
+    },
+  },
   ],
 }
