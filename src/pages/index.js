@@ -18,6 +18,8 @@ export default function Home() {
 			</div>
 			<div class="content">
 				<h2 class="content__title"><span>Dave Bokil</span><em>Web Developer</em></h2>
+				<p>Dave Bokil is a powerful Full Stack Javascript Developer with the innate gift of spotting potential optimizations in UX design and implementing solutions and improvements at a rapid pace.</p>
+				<p>He is currently Senior Full Stack Developer at the <a href="https://www.nbpa.com/" target="blank">National Basketball Player's Association</a></p>
 			</div>
 		</main>
 }

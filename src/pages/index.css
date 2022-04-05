@@ -10,13 +10,13 @@
 
 body {
     margin: 0;
-    --color-text: #202127;
-    --color-bg: #b6ffcd;
-    --color-link: #000;
-    --color-link-hover: #000;
+    --color-text: #ffffff;
+    --color-bg: #fff;
+    --color-link: rgb(255, 255, 255);
+    --color-link-hover: rgb(233, 233, 233);
     color: var(--color-text);
     background-color: var(--color-bg);
-    /*background: url('/img/1.jpg');*/
+    background: url('/img/1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -109,6 +109,16 @@ main {
 
 .grid-item {
     text-align: center;
+}
+
+.content a {
+    color: var(--color-link);
+    text-decoration: underline;
+    font-style: italic;
+    font-weight: 800;
+}
+.content a:hover {
+    color: #ebebeb;
 }
 
 @media screen and (min-width: 53em) {
