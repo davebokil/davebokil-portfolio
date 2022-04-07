@@ -177,3 +177,9 @@ main {
         height: 100vh;
     }
 }
+
+@media screen and (max-height: 627px){
+    .content__title {
+        margin-bottom: 10px;
+    }
+} 
