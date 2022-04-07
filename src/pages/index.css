@@ -11,12 +11,12 @@
 body {
     margin: 0;
     --color-text: #ffffff;
-    --color-bg: #fff;
+    --color-bg: rgb(0, 0, 0);
     --color-link: rgb(255, 255, 255);
-    --color-link-hover: rgb(233, 233, 233);
+    --color-link-hover: #ebebeb;;
     color: var(--color-text);
     background-color: var(--color-bg);
-    background: url('/img/1.jpg');
+    background: url('/images/1.jpeg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,6 +90,16 @@ main {
     margin: 0 0 15rem 0;
     max-width: 80rem;
 }
+.content__title-404 {
+    font-size: clamp(2rem, 10vw, 9rem);
+    text-transform: uppercase;
+    line-height: 0.8;
+    font-family: degular, sans-serif;
+    font-weight: 500;
+    letter-spacing: clamp(-0.05rem, -0.12vw, -0.15rem);
+    margin: 0 0 15rem 0;
+    max-width: 80rem;
+}
 
 .content__title span {
     white-space: nowrap;
@@ -117,9 +127,11 @@ main {
     font-style: italic;
     font-weight: 800;
 }
+
 .content a:hover {
-    color: #ebebeb;
+    color: var(--color-link-hover);
 }
+
 
 @media screen and (min-width: 53em) {
     main {
