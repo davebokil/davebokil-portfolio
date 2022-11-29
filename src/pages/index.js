@@ -1,9 +1,9 @@
 import React from "react"
 import './index.css'
 import { GatsbySeo } from 'gatsby-plugin-next-seo';
-// import { StaticQuery, graphql } from 'gatsby'
 
 export default function Home() {
+	const year = new Date()
     return <main>	
 		  <GatsbySeo
 		      title='Dave Bokil - Web Developer'
@@ -18,9 +18,9 @@ export default function Home() {
 			</div>
 			<div className="content">
 				<h2 className="content__title"><span>Dave Bokil</span><em>Web Developer</em></h2>
-				<p>Dave Bokil is a powerful Full Stack Javascript Developer with the innate gift of spotting potential optimizations in UX design and implementing solutions and improvements at a rapid pace.</p>
-				<p>He is currently Senior Full Stack Developer at the <a href="https://www.nbpa.com/" target="blank">National Basketball Player's Association</a></p>
-				<p>© 2022</p>
+				<h3>Dave Bokil is a powerful Full Stack Javascript Developer with the innate gift of spotting potential optimizations in UX design and implementing solutions and improvements at a rapid pace.</h3>
+				<h3>He is currently Senior Full Stack Developer at the <a href="https://www.nbpa.com/" target="blank">National Basketball Player's Association</a></h3>
+				<p>© {year.getFullYear()}</p>
 			</div>
 		</main>
 }
