@@ -1,5 +1,5 @@
 var plugins = [{
-      plugin: require('/Users/david.bokil/Documents/personal/davebokil-portfolio/node_modules/gatsby-plugin-next-seo/gatsby-ssr'),
+      plugin: require('/Users/david.bokil/Desktop/davebokil-portfolio/node_modules/gatsby-plugin-next-seo/gatsby-ssr'),
       options: {"plugins":[]},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
