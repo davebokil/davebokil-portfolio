@@ -81,7 +81,7 @@ main {
 }
 
 .content__title {
-    font-size: clamp(5rem, 10vw, 9rem);
+    font-size: clamp(4rem, 10vw, 9rem);
     text-transform: uppercase;
     line-height: 0.8;
     font-family: degular, sans-serif;
@@ -91,7 +91,7 @@ main {
     max-width: 80rem;
 }
 .content__title__em {
-    font-size: clamp(1rem, 10vw, 3rem);
+    font-size: clamp(2rem, 9vw, 5rem);
     text-transform: uppercase;
     line-height: 0.8;
     font-family: degular, sans-serif;
