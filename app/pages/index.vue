@@ -41,9 +41,9 @@ useHead({
           </button>
           <div class="frame__links__submenu">
             <a class="frame__links__submenu-item" href="https://apps.apple.com/sk/app/nbpa-portal/id6748317926" target="_blank" rel="noreferrer">NBPA Portal App</a>
-            <a class="frame__links__submenu-item" href="http://nbpa.com/" target="_blank" rel="noreferrer">NBPA.COM</a>
-            <a class="frame__links__submenu-item" href="http://nbpa.com/rucker" target="_blank" rel="noreferrer">Rucker Park</a>
+            <a class="frame__links__submenu-item" href="https://www.plyrsuntd.com/" target="_blank" rel="noreferrer">PLYRS UNTD</a>
             <a class="frame__links__submenu-item" href="http://poeltl.nbpa.com/" target="_blank" rel="noreferrer">Poeltl: NBA Wordle</a>
+            <a class="frame__links__submenu-item" href="http://nbpa.com/rucker" target="_blank" rel="noreferrer">Rucker Park</a>
           </div>
         </div>
         <div class="frame__links__dropdown">
