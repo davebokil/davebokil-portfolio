@@ -34,8 +34,15 @@ useHead({
       <div class="frame__links">
         <a href="https://www.linkedin.com/in/davebokil/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="https://github.com/davebokil" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://frippertripper.davebokil.com/" target="_blank" rel="noreferrer">Frippertripper</a>
-        <a href="https://breaks.davebokil.com/" target="_blank" rel="noreferrer">Breaks</a>
+        <div class="frame__links__dropdown">
+          <button type="button" class="frame__links__dropdown-trigger" aria-haspopup="true">
+            Passion Projects
+          </button>
+          <div class="frame__links__submenu">
+            <a href="https://frippertripper.davebokil.com/" target="_blank" rel="noreferrer">Synth</a>
+            <a href="https://breaks.davebokil.com/" target="_blank" rel="noreferrer">Breaks</a>
+          </div>
+        </div>
         <a href="mailto:bokild@gmail.com">Contact</a>
       </div>
     </div>
