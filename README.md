@@ -1,5 +1,5 @@
 # davebokil-portfolio
-Personal Portfolio written using Vue and Nuxt
+Personal portfolio website of Dave Bokil, built with Vue and Nuxt. Live at [davebokil.com](https://davebokil.com).
 
 ## Setup
 

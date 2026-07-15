@@ -4,7 +4,13 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
   app: {
     head: {
+      htmlAttrs: { lang: 'en' },
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    },
+  },
+  runtimeConfig: {
+    public: {
+      siteUrl: 'https://davebokil.com',
     },
   },
 })

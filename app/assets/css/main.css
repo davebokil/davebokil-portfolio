@@ -115,6 +115,12 @@ main {
     white-space: nowrap;
 }
 
+.content__text {
+    font-size: 1.17em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
 .content__title em {
     display: block;
     font-weight: 200;
@@ -195,7 +201,7 @@ main {
 }
 
 @media screen and (min-width: 1000px){
-    h3 {
+    .content__text {
         max-width: 75rem;
     }
 }
