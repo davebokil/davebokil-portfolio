@@ -97,16 +97,13 @@ main {
 .frame__links__submenu {
     position: absolute;
     top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
     display: none;
     flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding: 1.25rem 1.25rem 0.75rem;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(6px);
-    border-radius: 4px;
+    align-items: flex-end;
+    gap: 1rem;
+    padding-top: 1.25rem;
+    padding-right: 1.5rem;
     white-space: nowrap;
     z-index: 1;
 }
@@ -114,6 +111,55 @@ main {
 .frame__links__dropdown:hover .frame__links__submenu,
 .frame__links__dropdown:focus-within .frame__links__submenu {
     display: flex;
+}
+
+.frame__links__submenu::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0.6em;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.frame__links__submenu-item {
+    position: relative;
+    margin: 0;
+    text-align: right;
+}
+
+.frame__links__submenu-item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -1.5rem;
+    width: 1.5rem;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 52.99em) {
+    .frame__links__dropdown {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .frame__links__submenu {
+        position: static;
+        right: auto;
+        align-items: center;
+        padding: 0.5rem 0 0;
+    }
+
+    .frame__links__submenu::before,
+    .frame__links__submenu-item::after {
+        display: none;
+    }
+
+    .frame__links__submenu-item {
+        text-align: center;
+    }
 }
 
 .frame__links .frame__links__submenu a {

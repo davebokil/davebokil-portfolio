@@ -39,8 +39,8 @@ useHead({
             Passion Projects
           </button>
           <div class="frame__links__submenu">
-            <a href="https://frippertripper.davebokil.com/" target="_blank" rel="noreferrer">Synth</a>
-            <a href="https://breaks.davebokil.com/" target="_blank" rel="noreferrer">Breaks</a>
+            <a class="frame__links__submenu-item" href="https://frippertripper.davebokil.com/" target="_blank" rel="noreferrer">Web Based Synthesizer</a>
+            <a class="frame__links__submenu-item" href="https://breaks.davebokil.com/" target="_blank" rel="noreferrer">Breakbeat Generator</a>
           </div>
         </div>
         <a href="mailto:bokild@gmail.com">Contact</a>
