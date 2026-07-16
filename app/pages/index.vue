@@ -27,35 +27,45 @@ useSeoMeta({
 useHead({
   link: [{ rel: "canonical", href: siteUrl }],
 })
+
+function trackMenuClick(label, destination) {
+  if (typeof window !== "undefined" && typeof window.gtag === "function") {
+    window.gtag("event", "menu_click", {
+      event_category: "navigation",
+      event_label: label,
+      destination,
+    })
+  }
+}
 </script>
 
 <template>
   <main>
     <div class="frame">
       <div class="frame__links">
-        <a href="https://www.linkedin.com/in/davebokil/" target="_blank" rel="noreferrer">LinkedIn</a>
-        <a href="https://github.com/davebokil" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/davebokil/" target="_blank" rel="noreferrer" @click="trackMenuClick('LinkedIn', 'https://www.linkedin.com/in/davebokil/')">LinkedIn</a>
+        <a href="https://github.com/davebokil" target="_blank" rel="noreferrer" @click="trackMenuClick('GitHub', 'https://github.com/davebokil')">GitHub</a>
         <div class="frame__links__dropdown">
-          <button type="button" class="frame__links__dropdown-trigger" aria-haspopup="true">
+          <button type="button" class="frame__links__dropdown-trigger" aria-haspopup="true" @click="trackMenuClick('Recent Works (menu open)', null)">
             Recent Works
           </button>
           <div class="frame__links__submenu">
-            <a class="frame__links__submenu-item" href="https://apps.apple.com/sk/app/nbpa-portal/id6748317926" target="_blank" rel="noreferrer">NBPA Portal App</a>
-            <a class="frame__links__submenu-item" href="https://www.plyrsuntd.com/" target="_blank" rel="noreferrer">PLYRS UNTD</a>
-            <a class="frame__links__submenu-item" href="http://poeltl.nbpa.com/" target="_blank" rel="noreferrer">Poeltl: NBA Wordle</a>
-            <a class="frame__links__submenu-item" href="http://nbpa.com/rucker" target="_blank" rel="noreferrer">Rucker Park</a>
+            <a class="frame__links__submenu-item" href="https://apps.apple.com/sk/app/nbpa-portal/id6748317926" target="_blank" rel="noreferrer" @click="trackMenuClick('NBPA Portal App', 'https://apps.apple.com/sk/app/nbpa-portal/id6748317926')">NBPA Portal App</a>
+            <a class="frame__links__submenu-item" href="https://www.plyrsuntd.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('PLYRS UNTD', 'https://www.plyrsuntd.com/')">PLYRS UNTD</a>
+            <a class="frame__links__submenu-item" href="http://poeltl.nbpa.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('Poeltl: NBA Wordle', 'http://poeltl.nbpa.com/')">Poeltl: NBA Wordle</a>
+            <a class="frame__links__submenu-item" href="http://nbpa.com/rucker" target="_blank" rel="noreferrer" @click="trackMenuClick('Rucker Park', 'http://nbpa.com/rucker')">Rucker Park</a>
           </div>
         </div>
         <div class="frame__links__dropdown">
-          <button type="button" class="frame__links__dropdown-trigger" aria-haspopup="true">
+          <button type="button" class="frame__links__dropdown-trigger" aria-haspopup="true" @click="trackMenuClick('Side Projects (menu open)', null)">
             Side Projects 🎹
           </button>
           <div class="frame__links__submenu">
-            <a class="frame__links__submenu-item" href="https://frippertripper.davebokil.com/" target="_blank" rel="noreferrer">Web Based Synthesizer</a>
-            <a class="frame__links__submenu-item" href="https://breaks.davebokil.com/" target="_blank" rel="noreferrer">Breakbeat Generator</a>
+            <a class="frame__links__submenu-item" href="https://frippertripper.davebokil.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('Web Based Synthesizer', 'https://frippertripper.davebokil.com/')">Web Based Synthesizer</a>
+            <a class="frame__links__submenu-item" href="https://breaks.davebokil.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('Breakbeat Generator', 'https://breaks.davebokil.com/')">Breakbeat Generator</a>
           </div>
         </div>
-        <a href="mailto:bokild@gmail.com">Contact</a>
+        <a href="mailto:bokild@gmail.com" @click="trackMenuClick('Contact', 'mailto:bokild@gmail.com')">Contact</a>
       </div>
     </div>
     <div class="content">
