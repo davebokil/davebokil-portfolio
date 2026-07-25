@@ -43,8 +43,6 @@ function trackMenuClick(label, destination) {
   <main>
     <div class="frame">
       <div class="frame__links">
-        <a href="https://www.linkedin.com/in/davebokil/" target="_blank" rel="noreferrer" @click="trackMenuClick('LinkedIn', 'https://www.linkedin.com/in/davebokil/')">LinkedIn</a>
-        <a href="https://github.com/davebokil" target="_blank" rel="noreferrer" @click="trackMenuClick('GitHub', 'https://github.com/davebokil')">GitHub</a>
         <div class="frame__links__dropdown">
           <button type="button" class="frame__links__dropdown-trigger" aria-haspopup="true" @click="trackMenuClick('Recent Works (menu open)', null)">
             Recent Works
@@ -65,6 +63,8 @@ function trackMenuClick(label, destination) {
             <a class="frame__links__submenu-item" href="https://breaks.davebokil.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('Breakbeat Generator', 'https://breaks.davebokil.com/')">Breakbeat Generator</a>
           </div>
         </div>
+                <a href="https://www.linkedin.com/in/davebokil/" target="_blank" rel="noreferrer" @click="trackMenuClick('LinkedIn', 'https://www.linkedin.com/in/davebokil/')">LinkedIn</a>
+        <a href="https://github.com/davebokil" target="_blank" rel="noreferrer" @click="trackMenuClick('GitHub', 'https://github.com/davebokil')">GitHub</a>
         <a href="mailto:bokild@gmail.com" @click="trackMenuClick('Contact', 'mailto:bokild@gmail.com')">Contact</a>
       </div>
     </div>
