@@ -56,7 +56,7 @@ function trackMenuClick(label, destination) {
         </div>
         <div class="frame__links__dropdown">
           <button type="button" class="frame__links__dropdown-trigger" aria-haspopup="true" @click="trackMenuClick('Side Projects (menu open)', null)">
-            Passion Projects 🎹
+            Other Projects 🎹
           </button>
           <div class="frame__links__submenu">
             <a class="frame__links__submenu-item" href="https://frippertripper.davebokil.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('Web Based Synthesizer', 'https://frippertripper.davebokil.com/')">Web Based Synthesizer</a>
