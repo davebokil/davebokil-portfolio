@@ -65,7 +65,7 @@ function trackMenuClick(label, destination) {
         </div>
                 <a href="https://www.linkedin.com/in/davebokil/" target="_blank" rel="noreferrer" @click="trackMenuClick('LinkedIn', 'https://www.linkedin.com/in/davebokil/')">LinkedIn</a>
         <a href="https://github.com/davebokil" target="_blank" rel="noreferrer" @click="trackMenuClick('GitHub', 'https://github.com/davebokil')">GitHub</a>
-        <a href="mailto:bokild@gmail.com" @click="trackMenuClick('Contact', 'mailto:bokild@gmail.com')">Contact</a>
+        <a href="/contact" @click="trackMenuClick('Contact', '/contact')">Contact</a>
       </div>
     </div>
     <div class="content">
