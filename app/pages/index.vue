@@ -59,7 +59,8 @@ function trackMenuClick(label, destination) {
             Other Projects 🎹
           </button>
           <div class="frame__links__submenu">
-            <a class="frame__links__submenu-item" href="https://frippertripper.davebokil.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('Web Based Synthesizer', 'https://frippertripper.davebokil.com/')">Web Based Synthesizer</a>
+            <a class="frame__links__submenu-item" href="https://apps.apple.com/sk/app/reve-model-1/id6799227993" target="_blank" rel="noreferrer" @click="trackMenuClick('REVE Model 1', 'https://apps.apple.com/sk/app/reve-model-1/id6799227993')">REVE Model 1 iOS App</a>
+            <a class="frame__links__submenu-item" href="https://frippertripper.davebokil.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('Web Based Synthesizer', 'https://frippertripper.davebokil.com/')">FripperTripper Web Synth</a>
             <a class="frame__links__submenu-item" href="https://breaks.davebokil.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('Breakbeat Generator', 'https://breaks.davebokil.com/')">Breakbeat Generator</a>
           </div>
         </div>
