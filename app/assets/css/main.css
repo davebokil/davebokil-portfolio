@@ -233,7 +233,7 @@ main {
 
 .content__text {
     font-size: 1.17em;
-    font-weight: bold;
+    /* font-weight: bold; */
     margin: 1em 0;
 }
 
