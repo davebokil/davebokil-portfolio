@@ -323,3 +323,13 @@ main {
         max-width: 75rem;
     }
 }
+
+/* shared page-wrapper for the /reve-model-1/* subpages (privacy-policy, support, case study) */
+.policy,
+.casestudy {
+    min-height: 100vh;
+    padding: 4rem 5vw 6rem;
+    display: flex;
+    justify-content: center;
+    background: #000;
+}

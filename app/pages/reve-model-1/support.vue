@@ -26,7 +26,7 @@ async function handleSubmit() {
   }
 }
 
-const title = "Support — REVE Model 1"
+const title = "Support: REVE Model 1"
 const description = "Get help with REVE Model 1, the musical synthesizer app with echo effect. Find answers to common questions or contact us directly."
 
 useSeoMeta({
@@ -56,15 +56,15 @@ useHead({
 
       <p>
         Need help with REVE Model 1? You're in the right place. Below are answers to some common
-        questions — if you don't find what you're looking for, reach out directly and we'll get
+        questions. If you don't find what you're looking for, reach out directly and we'll get
         back to you as soon as we can.
       </p>
 
       <h2>Contact Us</h2>
       <p>
         For questions, bug reports, or feedback about REVE Model 1, send us a message below.
-        Please include your device model and iOS version if you're reporting an issue — it helps
-        us track things down faster.
+        Please include your device model and iOS version if you're reporting an issue, since it
+        helps us track things down faster.
       </p>
 
       <form class="policy__form" @submit.prevent="handleSubmit">
@@ -86,7 +86,7 @@ useHead({
         </button>
 
         <p v-if="status === 'success'" class="policy__status policy__status--success">
-          Thanks — your message has been sent. We'll get back to you soon.
+          Thanks, your message has been sent. We'll get back to you soon.
         </p>
         <p v-if="status === 'error'" class="policy__status policy__status--error">
           {{ errorMessage }}
@@ -107,7 +107,7 @@ useHead({
         <a href="/reve-model-1/privacy-policy">Privacy Policy</a> for full details.
       </p>
 
-      <p><strong>I found a bug or have a feature request — what should I do?</strong></p>
+      <p><strong>I found a bug or have a feature request: what should I do?</strong></p>
       <p>
         Use the contact form above with a description of the issue or idea. Screenshots or screen
         recordings are always helpful.
@@ -123,13 +123,6 @@ useHead({
 </template>
 
 <style scoped>
-.policy {
-  min-height: 100vh;
-  padding: 4rem 5vw 6rem;
-  display: flex;
-  justify-content: center;
-}
-
 .policy__wrap {
   width: 100%;
   max-width: 42rem;

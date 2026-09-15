@@ -3,7 +3,7 @@ const config = useRuntimeConfig()
 const siteUrl = config.public.siteUrl
 const pageUrl = `${siteUrl}/reve-model-1/privacy-policy`
 
-const title = "Privacy Policy — REVE Model 1"
+const title = "Privacy Policy: REVE Model 1"
 const description = "REVE Model 1 does not collect, store, or share any personal data. All sound synthesis and audio processing happen entirely on your device."
 
 useSeoMeta({
@@ -73,8 +73,8 @@ useHead({
       <h2>4. Platform-Provided Data</h2>
       <p>
         Apple (via the App Store) and our web hosting provider may automatically collect limited
-        technical data — such as anonymized crash logs, download counts, or aggregate usage
-        statistics — as part of operating their platforms. This data is governed by Apple's own
+        technical data, such as anonymized crash logs, download counts, or aggregate usage
+        statistics, as part of operating their platforms. This data is governed by Apple's own
         privacy policy and, where applicable, our hosting provider's policy, not by us. We do not
         have access to personally identifying information through these channels.
       </p>
@@ -118,13 +118,6 @@ useHead({
 </template>
 
 <style scoped>
-.policy {
-  min-height: 100vh;
-  padding: 4rem 5vw 6rem;
-  display: flex;
-  justify-content: center;
-}
-
 .policy__wrap {
   width: 100%;
   max-width: 42rem;
