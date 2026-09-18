@@ -22,6 +22,7 @@ gtag('config', 'G-K4VMC162N6');`,
   },
   runtimeConfig: {
     resendApiKey: '',
+    gatePassword: '',
     public: {
       siteUrl: 'https://davebokil.com',
     },

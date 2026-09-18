@@ -506,7 +506,7 @@ function trackCtaClick(label, destination) {
 
 .casestudy__dek {
   font-size: 1.15rem;
-  max-width: 42rem;
+  max-width: 64rem;
   margin: 0 0 1rem;
 }
 
@@ -634,7 +634,7 @@ function trackCtaClick(label, destination) {
   grid-template-columns: repeat(3, minmax(9rem, 1fr));
   gap: 1.5rem;
   margin-top: 1rem;
-  max-width: 44rem;
+  max-width: 64rem;
 }
 
 .casestudy__hero-shots img {

@@ -36,7 +36,7 @@ useHead({
       <h1 class="content__title"><span>Dave Bokil</span></h1>
       <h2 class="content__title__em"><em>Technical Product Growth & Innovation</em></h2>
       <!-- <p class="content__text">{{ description }}</p> -->
-      <p class="content__text">Currently a Product Director. <br> Formerly a Software Engineer. <br>Now at
+      <p class="content__text">Currently a Product Director. <br> Formerly a Software Engineer. <br>Now <i>Director of Digital Product</i> at
         <a href="https://www.nbpa.com/" target="_blank" rel="noreferrer">National Basketball Players Association</a>.</p>
     </div>
   </main>
