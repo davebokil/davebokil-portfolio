@@ -128,17 +128,17 @@ useHead({
   display: inline-block;
   margin-bottom: 3rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   font-size: 0.85rem;
 }
 
 .policy__title {
-  font-family: degular, sans-serif;
-  font-weight: 400;
+  font-family: var(--font-sans);
+  font-weight: 900;
   text-transform: uppercase;
   font-size: clamp(2.25rem, 6vw, 3.5rem);
   line-height: 0.9;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.015em;
   margin: 0 0 0.75rem;
 }
 
@@ -148,7 +148,7 @@ useHead({
 }
 
 .policy h2 {
-  font-family: degular, sans-serif;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 1.4rem;
   margin: 2.5rem 0 0.75rem;

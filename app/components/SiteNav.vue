@@ -22,14 +22,14 @@ function trackMenuClick(label, destination) {
           <a class="frame__links__submenu-item" href="/reve-model-1" @click="trackMenuClick('REVE Model 1 Case Study', '/reve-model-1')">REVE Model 1 iOS App</a>
           <a class="frame__links__submenu-item" href="/nbpa-crm" @click="trackMenuClick('NBPA CRM Case Study', '/nbpa-crm')">NBPA CRM (Salesforce)</a>
           <a class="frame__links__submenu-item" href="/poeltl" @click="trackMenuClick('Poeltl Case Study', '/poeltl')">Poeltl: NBA Guessing Game</a>
-          <a class="frame__links__submenu-item" href="/g-league-vote" @click="trackMenuClick('G-League Vote Case Study', '/g-league-vote')">G-League Unionization</a>
+          <!-- <a class="frame__links__submenu-item" href="/g-league-vote" @click="trackMenuClick('G-League Vote Case Study', '/g-league-vote')">G-League Unionization</a> -->
           <a class="frame__links__submenu-item" href="https://www.hashtagsports.com/awards/shortlist-2022/nbpa-refurbishment-of-rucker-park-harlem" target="_blank" rel="noreferrer" @click="trackMenuClick('Rucker Park', 'https://www.hashtagsports.com/awards/shortlist-2022/nbpa-refurbishment-of-rucker-park-harlem')">NBPA REFURBISHMENT OF RUCKER PARK, HARLEM</a>
           <a class="frame__links__submenu-item" href="https://www.hashtagsports.com/awards/shortlist-2022/nbpa-450-gives-its-better-to-click-receive" target="_blank" rel="noreferrer" @click="trackMenuClick('Rucker Park', 'https://www.hashtagsports.com/awards/shortlist-2022/nbpa-450-gives-its-better-to-click-receive')">NBPA 450 Gives: It's Better to Click & Receive</a>
         </div>
       </div>
       <div class="frame__links__dropdown">
         <button type="button" class="frame__links__dropdown-trigger" aria-haspopup="true" @click="trackMenuClick('Side Projects (menu open)', null)">
-          Other Fun Stuff 🎹
+         Fun Stuff 🎹
         </button>
         <div class="frame__links__submenu">
           <a class="frame__links__submenu-item" href="https://breaks.davebokil.com/" target="_blank" rel="noreferrer" @click="trackMenuClick('Breakbeat Generator', 'https://breaks.davebokil.com/')">Breakbeat Generator</a>

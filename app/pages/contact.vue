@@ -104,17 +104,17 @@ Got a question, a project in mind, or just want to say hello? Drop a message bel
   display: inline-block;
   margin-bottom: 3rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   font-size: 0.85rem;
 }
 
 .policy__title {
-  font-family: degular, sans-serif;
-  font-weight: 400;
+  font-family: var(--font-sans);
+  font-weight: 900;
   text-transform: uppercase;
   font-size: clamp(2.25rem, 6vw, 3.5rem);
   line-height: 0.9;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.015em;
   margin: 0 0 1.5rem;
 }
 
@@ -144,7 +144,7 @@ Got a question, a project in mind, or just want to say hello? Drop a message bel
   gap: 0.4rem;
   font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   opacity: 0.85;
 }
 
@@ -152,7 +152,7 @@ Got a question, a project in mind, or just want to say hello? Drop a message bel
 .policy__field textarea {
   font-family: inherit;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   letter-spacing: normal;
   color: var(--color-text);
@@ -179,7 +179,7 @@ Got a question, a project in mind, or just want to say hello? Drop a message bel
   font-family: inherit;
   font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   color: var(--color-text);
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);

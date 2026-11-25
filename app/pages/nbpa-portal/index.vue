@@ -526,7 +526,7 @@ function trackCtaClick(label, destination) {
   display: inline-block;
   margin-bottom: 3rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   font-size: 0.85rem;
 }
 
@@ -549,19 +549,19 @@ function trackCtaClick(label, destination) {
 
 .casestudy__eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   font-size: 0.85rem;
   opacity: 0.7;
   margin: 0 0 0.75rem;
 }
 
 .casestudy__title {
-  font-family: degular, sans-serif;
-  font-weight: 400;
+  font-family: var(--font-sans);
+  font-weight: 900;
   text-transform: uppercase;
   font-size: clamp(2.5rem, 8vw, 5rem);
   line-height: 0.9;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.015em;
   margin: 0 0 1rem;
 }
 
@@ -591,7 +591,7 @@ function trackCtaClick(label, destination) {
   font-family: inherit;
   font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   color: var(--color-text);
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -626,7 +626,7 @@ function trackCtaClick(label, destination) {
 }
 
 .casestudy h2 {
-  font-family: degular, sans-serif;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -634,7 +634,7 @@ function trackCtaClick(label, destination) {
 }
 
 .casestudy h3 {
-  font-family: degular, sans-serif;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 1.05rem;
   margin: 0 0 0.4rem;
@@ -759,14 +759,14 @@ function trackCtaClick(label, destination) {
 }
 
 .casestudy__stat-value {
-  font-family: degular, sans-serif;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: clamp(1.5rem, 3vw, 2.25rem);
 }
 
 .casestudy__stat-label {
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   font-size: 0.75rem;
   opacity: 0.7;
 }
@@ -787,10 +787,11 @@ function trackCtaClick(label, destination) {
 }
 
 .casestudy__process-number {
-  font-family: degular, sans-serif;
+  font-family: var(--font-sans);
   font-size: 1.5rem;
   line-height: 1.05;
   opacity: 0.5;
+  font-weight: 400;
 }
 
 .casestudy__features {
@@ -817,7 +818,7 @@ function trackCtaClick(label, destination) {
 
 .casestudy__feature-number {
   display: block;
-  font-family: degular, sans-serif;
+  font-family: var(--font-sans);
   font-weight: 400;
   font-size: 2.25rem;
   line-height: 1;
@@ -844,7 +845,7 @@ function trackCtaClick(label, destination) {
   padding: 0.35rem 0.9rem;
   font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
 }
 
 .casestudy__footer {
@@ -866,7 +867,7 @@ function trackCtaClick(label, destination) {
   flex-wrap: wrap;
   gap: 1.5rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   font-size: 0.85rem;
 }
 

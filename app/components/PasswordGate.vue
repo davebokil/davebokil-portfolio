@@ -166,15 +166,15 @@ async function handleRequestAccess() {
 
 .gate__eyebrow {
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   font-size: 0.8rem;
   opacity: 0.7;
   margin: 0;
 }
 
 .gate__title {
-  font-family: degular, sans-serif;
-  font-weight: 400;
+  font-family: var(--font-sans);
+  font-weight: 900;
   font-size: 1.3rem;
   margin: 0.25rem 0;
 }
@@ -211,7 +211,7 @@ async function handleRequestAccess() {
   font-family: inherit;
   font-size: 0.85rem;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
+  letter-spacing: -0.015em;
   color: var(--color-text);
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.5);
