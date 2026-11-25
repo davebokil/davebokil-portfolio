@@ -28,9 +28,20 @@ const eyeStyle = computed(() => {
   return { width: `${w}px`, height: `${h}px`, left: `${cx - w / 2}px`, top: `${cy - h / 2}px` }
 })
 
+// Use the visual viewport where available: on phones it tracks the browser bar showing/hiding
 function onResize() {
-  vw.value = window.innerWidth
-  vh.value = window.innerHeight
+  const v = window.visualViewport
+  vw.value = v ? v.width : window.innerWidth
+  vh.value = v ? v.height : window.innerHeight
+}
+
+// Freeze page scrolling (and iOS rubber-banding) while the corner is being peeled or turned,
+// so the page underneath doesn't slide around beneath the fold
+function lockScroll(on) {
+  const root = document.documentElement
+  root.style.overflow = on ? "hidden" : ""
+  root.style.overscrollBehavior = on ? "none" : ""
+  document.body.style.overscrollBehavior = on ? "none" : ""
 }
 
 // --- Drag: the fold follows the pointer (the folded corner tip lands under the cursor)
@@ -40,6 +51,7 @@ let moved = false
 function onDown(e) {
   if (turning.value) return
   dragging.value = true
+  lockScroll(true)
   moved = false
   startX = e.clientX
   startY = e.clientY
@@ -56,7 +68,10 @@ function onUp() {
   dragging.value = false
   const threshold = Math.min(vw.value, vh.value) * 0.35
   if (!moved || size.value > threshold) turnPage()
-  else size.value = hovering.value ? HOVER : IDLE
+  else {
+    lockScroll(false)
+    size.value = hovering.value ? HOVER : IDLE
+  }
 }
 
 // --- Turn: sweep the fold across the whole screen, then go
@@ -64,6 +79,7 @@ let turnTimer = 0
 function turnPage() {
   if (turning.value) return
   turning.value = true
+  lockScroll(true)
   size.value = (vw.value + vh.value) * 1.05
   turnTimer = setTimeout(() => navigateTo(props.to), 650)
 }
@@ -80,10 +96,13 @@ function onLeave() {
 onMounted(() => {
   onResize()
   window.addEventListener("resize", onResize, { passive: true })
+  window.visualViewport?.addEventListener("resize", onResize, { passive: true })
 })
 onBeforeUnmount(() => {
   window.removeEventListener("resize", onResize)
+  window.visualViewport?.removeEventListener("resize", onResize)
   clearTimeout(turnTimer)
+  lockScroll(false)
 })
 </script>
 
@@ -132,6 +151,10 @@ onBeforeUnmount(() => {
   background: none;
   cursor: grab;
   touch-action: none;
+  overscroll-behavior: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
   -webkit-tap-highlight-color: transparent;
   transition: width 0.6s cubic-bezier(0.3, 0.7, 0.2, 1), height 0.6s cubic-bezier(0.3, 0.7, 0.2, 1);
   /* only the folded square is interactive, not the empty box around it */

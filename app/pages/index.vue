@@ -148,6 +148,7 @@ onBeforeUnmount(() => window.removeEventListener("resize", fitAll))
 /* Peachpuff canvas (recoloured by the wordmark letters), black type, one massive wordmark as the floor of the page */
 .home {
   min-height: 100vh;
+  min-height: 100dvh; /* mobile: match the visible screen so the page doesn't scroll under the browser bar */
   overflow-x: clip; /* trailing side bearing of the last glyph may extend past the edge */
   display: flex;
   flex-direction: column;
