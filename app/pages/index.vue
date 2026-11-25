@@ -135,9 +135,9 @@ onBeforeUnmount(() => window.removeEventListener("resize", fitAll))
       </h1>
     </div>
     <div class="content">
-      <h2 ref="tagline" class="content__title__em"><em>Technical Product Owner</em></h2>
+      <!-- <h2 ref="tagline" class="content__title__em"><em>Technical Product Owner</em></h2> -->
       <!-- <p class="content__text">{{ description }}</p> -->
-      <p class="content__text">Currently a Product Director. <br> Formerly a Software Engineer. <br>Now <i>Director of Digital Products</i> at the
+      <p class="content__text">Formerly a Software Engineer. <br>Currently <i>Director of Digital Products</i> at the
         <a href="https://www.nbpa.com/" target="_blank" rel="noreferrer">National Basketball Players Association</a>.</p>
     </div>
     <PageCurl to="/psych" :bg="bg" />
